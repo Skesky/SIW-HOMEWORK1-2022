@@ -16,7 +16,7 @@ public class Societa {
 	private String numeroTelefono;
 	
 	@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
-	//FETCH: e' necessario avere un cascade perche' ogni societa' avere un indirizzo
+	//CASCADE: e' necessario avere un cascade perche' ogni societa' deve avere un indirizzo
 	private Indirizzo indirizzoSede;
 	
 	

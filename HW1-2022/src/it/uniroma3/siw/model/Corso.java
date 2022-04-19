@@ -24,7 +24,7 @@ public class Corso {
 	private Docente docente;
 	
 	@OneToMany(mappedBy = "corsi", fetch = FetchType.EAGER)
-	//FETCH: nell'ottica un un ente che eroga corsi di formazione potrebbe essere utili attuare una politica di fecth eager per i corsi
+	//FETCH: nell'ottica di un ente che eroga corsi di formazione potrebbe essere utili attuare una politica di fecth eager per i corsi
 	List<Allievo> allievi;
 	
 	
